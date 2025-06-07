@@ -1,0 +1,176 @@
+/* src/styles/index.css */
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --error: #dc2626;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.step-container {
+  padding: 1rem;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.step-number {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  color: #6b7280;
+  font-weight: bold;
+}
+
+.step.active .step-number {
+  background-color: var(--primary);
+  color: white;
+}
+
+.step-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.step.active .step-label {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-field {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.input-field.error {
+  border-color: var(--error);
+}
+
+.error-message {
+  color: var(--error);
+  font-size: 0.875rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: flex-end;
+}
+
+.review-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.message-preview {
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+.character-count {
+  text-align: right;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .stepper {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .step {
+    flex: 1 0 30%;
+  }
+}
+
+/* button */
+/* Add to your main CSS file */
+button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button[type="button"] {
+  background: #4299e1;
+  color: white;
+  border: none;
+}
+
+button[type="button"]:hover {
+  background: #3182ce;
+}
+
+button[type="button"]:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+button.outline {
+  background: white;
+  border: 1px solid #4299e1;
+  color: #4299e1;
+}
+
+button.outline:hover {
+  background: #ebf8ff;
+}
+
+button.text {
+  background: none;
+  border: none;
+  color: #4299e1;
+  padding: 0;
+}

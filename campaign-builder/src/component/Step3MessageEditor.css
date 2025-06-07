@@ -1,0 +1,114 @@
+.step-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.channel-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.channel-tab {
+  padding: 0.5rem 1rem;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.channel-tab.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.channel-tab:hover {
+  background-color: #e0e0e0;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.mode-toggle {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.message-input {
+  width: 100%;
+  min-height: 180px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  resize: vertical;
+  background-color: #fafafa;
+}
+
+.message-input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: white;
+}
+
+.message-preview {
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background-color: #fefefe;
+  min-height: 180px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.message-preview h4 {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.character-count {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Optional: Quill Editor styling overrides */
+.ql-container {
+  border-radius: 0.75rem;
+}
+
+.ql-toolbar {
+  border-radius: 0.75rem 0.75rem 0 0;
+  background-color: #f4f4f4;
+}
+
+.ql-editor {
+  min-height: 180px;
+  background-color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
